@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>
+            FAMILY BOOK
+        </title>
+    </head>
+    <body>
+        <h1>My Family Book</h1>
+        <img  id="image" src="https://static.onecms.io/wp-content/uploads/sites/38/2020/05/19/Podcast-we-are-family--2000.jpg">
+        <h2 id="name">My family </h2>
+        <button onclick="update()">Next</button>
+    
+    <script>
+    var images=["dad.jpg","mom.jpg","me.jpg","family.jpg"];
+    var names=["jagtar singh","Manisha sandhu","simmar sandhu","my lovely family"];
+    var i= 0;
+    function update(){
+        i++
+        var number_of_name = 3;
+        if(i > number_of_name){
+            i = 0;
+
+        }
+        var updateimg = images[i];
+        var updatename = names[i];
+        document.getElementById("image").src=updateimg;
+        document.getElementById("name").innerHTML=updatename;
+
+
+
+    }
+
+ </script>       
+    
+    </body>
+
+</html>
